@@ -14,6 +14,21 @@ a, a:hover, a:visited, a:active {
     text-decoration: none;
 }
 
+/* TYPOGRAPHY */
+h3 {
+    color: #335576;
+
+}
+
+p {
+    color:#335576;
+    font-size: 14px;
+}
+
+.subtitle {
+    color: #DB7A4E;
+    font-size: 8.5px;
+}
 /* NAVIGATION BAR */
 
 .navigation__section--container {
@@ -48,6 +63,39 @@ a, a:hover, a:visited, a:active {
     padding: 8px 0;   
 }
 
+
+/* THIS NEEDS JS TO HIGHLIGHT ACTIVE PAGE */
 .active {
     border-bottom: 3px solid #DB7A4E;
+}
+
+
+/* FOOTER */
+
+.footer__container {
+    background-color: #FEFAF5;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    gap: 7%;
+    padding: 40px 40px 0px 40px;
+}
+
+img.icon {
+    height: 22px;
+    margin: 18px 24px 0 0;
+}
+
+.footer__dates--container {
+    display: flex;
+}
+
+.footer__dates {
+    margin-right: 30px;
+}
+.footer__content--container h3 {
+    margin-bottom: 25px;
+}
+.footer__content--container .subtitle {
+    margin-bottom: 10px;
 }
