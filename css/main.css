@@ -1,0 +1,137 @@
+.hero__container {
+    background-color:#FEFAF5;
+    display: flex;
+    justify-content: space-between;
+    padding: 8% 7% 60px 90px;
+}
+
+.hero__image {
+    width: 100%;
+    max-height: 345px;
+
+}
+
+.hero__image:hover {
+    transition: all .5s ease-in-out;
+    transform: scale(1.1);
+}
+
+.hero__left-side {
+    max-width: 50%;
+
+}
+
+.hero__left-side h1 {
+    padding-bottom:40px;
+}
+
+.hero__left-side p {
+    padding-bottom: 35px;
+}
+
+
+@media only screen and (max-width: 850px) {
+
+    .hero__container {
+        padding-left: 10%;
+        padding-bottom: 5%;
+    }
+
+    .hero__image {
+        display: none;
+    }
+    .card__container {
+        flex-wrap: wrap;
+    }
+    .hero__left-side {
+        max-width: 100%;
+    }
+
+    .std__button{
+        margin-left: 50%;
+        transform: translateX(-50%);
+        font-size: 20px;
+        max-width: 300px;
+        min-width: 300px;
+        padding: 3% 8%;
+    }
+
+    /* * {
+        border: 1px solid red;
+    } */
+}
+
+/* MAIN SECTION */
+
+
+.recommendation__container {
+    background-color: #FFF;
+    height: 550px;
+    padding: 45px 90px;
+}
+
+.recommendation__container h3 {
+    padding-bottom: 25px;
+}
+
+.card__container {
+    display: flex;
+    justify-content: center;
+    gap: 3.5%;
+}
+
+.card {
+    display: flex;
+    justify-content: flex-end;
+    width: 250px;
+    height: 380px;
+    overflow: hidden;
+    border-radius: 5px;
+    border: 1px solid rgba(0,0,0,0.2);
+    box-shadow: 0 4px 4px rgba(0,0,0,0.2);
+
+}
+
+.card:hover {
+    transition: all .5s ease-in-out;
+    transform: scale(1.1);
+}
+
+.card img {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+}
+
+.card__title {
+    align-self: flex-end;
+    position: absolute;
+    font-size: 22px;
+    font-weight: 600;
+    color: white;
+    padding: 16px 20px;
+}
+
+@media only screen and (max-width: 850px) {
+    .card {
+        width: 200px;
+        height: 330px;
+    }
+    
+    .card:hover {
+        transition: all .5s ease-in-out;
+        transform: scale(1.1);
+    }
+
+    .recommendation__container {
+        padding: 45px 10%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card__container {
+        gap: 10px;
+    }
+}
